@@ -13,6 +13,8 @@ square_sum([1, 2, 2])
 # 123 --> "123"
 # 999 --> "999"
 # -100 --> "-100"
+
+# Define function
 def num_to_str(num):
     if num != None:
         text = str(num)
