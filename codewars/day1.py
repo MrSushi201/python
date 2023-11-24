@@ -7,3 +7,17 @@ def square_sum(nums):
     return sq_sum, print(f"Sum of square(nums): {sq_sum}")
 
 square_sum([1, 2, 2])
+
+# We need a function that can transform a number (integer) into a string.
+# Example: (input --> output)
+# 123 --> "123"
+# 999 --> "999"
+# -100 --> "-100"
+def num_to_str(num):
+    if num != None:
+        text = str(num)
+        return text, print(f"Integer to convert: {text}. Type after conversion: {type(text)}")
+    else:
+        pass
+
+num_to_str(-100)
