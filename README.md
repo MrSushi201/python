@@ -1,1 +1,2 @@
-This folder contains my study materials for subject: Python Programming
+# ABOUT
+This repository contains my study materials for subject: Python
