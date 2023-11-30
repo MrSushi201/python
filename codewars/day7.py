@@ -18,3 +18,23 @@ def make_negative(number: int or float):
         res = number
         print(res)
         return res
+    
+# Century From Year
+# The first century spans from the year 1 up to and including the year 100. 
+# The second century spans from 101 up to and including the year 200, et cetera.
+# Task:
+#       Given a year, return the century it is in.
+# Examples:
+            # 1705 --> 18
+            # 1900 --> 19
+            # 1601 --> 17
+            # 2000 --> 20
+
+# Define function
+def century(year: int):
+    if year <= 0:
+        pass
+    elif year > 0:
+        res = ((year - 1) // 100) + 1
+        print(res)
+        return res
