@@ -17,3 +17,18 @@ def solution(text:str, ending: str):
         return True
     else:
         return False
+    
+# You are a square
+# Given an integral number, determine if it is a square number:
+# In mathematics, a square number or perfect square is an integer that is the square of an integer;
+# In other words, it is the product of some integer with itself.
+
+# Define function
+def is_square(n: int):
+    square = n ** 0.5
+    if square ** 2 == n:
+        print("True")
+        return True
+    else:
+        print("False")
+        return False
