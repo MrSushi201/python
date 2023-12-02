@@ -29,3 +29,13 @@ def count_positives_sum_negatives(arr: list):
 
         print(new_arr)
         return new_arr
+    
+def count_positives_sum_negatives_another(arr: list):
+    if not arr: return []
+    count_pos, sum_neg = 0, 0
+    for i in arr:
+        if i > 0:
+            count_pos += 1
+        elif i < 0:
+            sum_neg += i
+    return [count_pos, sum_neg]
