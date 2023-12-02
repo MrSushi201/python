@@ -39,3 +39,33 @@ def count_positives_sum_negatives_another(arr: list):
         elif i < 0:
             sum_neg += i
     return [count_pos, sum_neg]
+
+# Ones and Zeros
+# Given an array of ones and zeros, convert the equivalent binary value to an integer.
+# Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+# However, the arrays can have varying lengths, not just limited to 4.
+
+# Define function
+def binary_array_to_number(arr: list):
+    # Case where arr is not an array
+    if not arr: return []
+    bit_str = ""
+
+    # If arr is an array with some lengths
+    for i in arr:
+        bit_str = bit_str + str(i)
+    
+    value = int(bit_str, 2)
+    print(bit_str, value)
+
+    return value
+
+def binary_array_to_number(arr: list):
+    if not arr: return []
+    else:
+        value = int("".join(map(str, arr)), 2)
+        print(arr, ":", value)
+        return value
+
+binary_array_to_number([0, 0, 0, 1])
+binary_array_to_number([0, 0, 1, 0])
