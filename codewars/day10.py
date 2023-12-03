@@ -29,3 +29,11 @@ def high_and_low(numbers):
         return f"{int_list[0]} {int_list[-1]}"
     else:
         pass
+
+# Refactor function
+def high_and_low(numbers):
+    numbers = [int(i) for i in numbers.split(" ")]
+    print(f"{max(numbers)} {min(numbers)}")
+    return f"{max(numbers)} {min(numbers)}"
+
+high_and_low("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6")
