@@ -16,3 +16,10 @@ def nb_year(p0: int, percent: int | float, aug: int, p: int):
         n = n + 1
 
     return n
+
+# Function 1 - Hello World
+# Make a simple function called greet that returns the most-famous "hello world!".
+
+# Define function / solution
+def greet():
+    return "hello world!"
