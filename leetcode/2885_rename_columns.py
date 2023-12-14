@@ -8,6 +8,7 @@
 # | last        | object |
 # | age         | int    |
 # +-------------+--------+
+
 # Write a solution to rename the columns as follows:
     # id to student_id
     # first to first_name
